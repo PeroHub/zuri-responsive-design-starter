@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="nav-bar">
+    <div class="nav-bar" id="topnav">
         <div class="logo">Snapshot</div>
+        
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li class="color"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a></li>
         </ul>
+
+        <!-- <div class="toggle-container">
+            <div class="toggle-item">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div> -->
     </div>
 
     <!-- Hero section -->
@@ -103,5 +114,7 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
